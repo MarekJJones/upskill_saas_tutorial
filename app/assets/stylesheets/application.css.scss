@@ -1,63 +1,56 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
- @import 'bootstrap-sprockets';
- @import 'bootstrap';
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* Typography Styles */
 h1, h2, h3 {
-    font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
+/* Backgroud Gradient */
 .navbar, .home-callout {
-    /*Graidient provided by uiGradients.com*/
-    background: #FFEEEE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*Graidient provided by uiGradients.com*/
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
-    border: none;
+  border: none;
 }
 
-.navbar-default .navbar-brand {
-    color: #777;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-   color: #777; 
-}
-
-.navbar-default .navbar-brand:hover {
+  color: #777;
+  &:hover {
     color: white;
     opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 0.75;
+  }
 }
 
 .home-callout {
-    color: #777;
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+  color: #777;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .container {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
