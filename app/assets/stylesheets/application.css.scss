@@ -21,7 +21,7 @@
 
 /* Typography Styles */
 h1, h2, h3 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 /* Backgroud Gradient */
@@ -38,8 +38,8 @@ h1, h2, h3 {
 }
 
 .navbar-brand {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
 }
 
 .navbar-default .navbar-brand,
@@ -48,6 +48,17 @@ h1, h2, h3 {
   &:hover {
     color: white;
     opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color:#DDEFBB;
   }
 }
 
