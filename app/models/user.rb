@@ -14,11 +14,11 @@ class User < ApplicationRecord
   # upon charging the customer's card. 
   # Stripe responds back with customer data. 
   # Store customer.id as the customer token and save the user.
-attr_accessor :stripe_card_token
 
-  def save_with_payment
+  attr_accessor :stripe_card_token
+  def save_with_subscription
     if valid?
-      customer = Stripe::Customer.create(description: email, plan: plan_id, source: stripe_card_token)
+      customer = Stripe::Customer.create(description: email, plan: plan_id, card: stripe_card_token)
       self.stripe_customer_token = customer.id
      save!
     end

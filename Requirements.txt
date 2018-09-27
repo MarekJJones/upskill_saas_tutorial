@@ -22,6 +22,6 @@ User Profiles
 * User should be able to view all user profiles
 
 Problems
-* Payment method not working for pro (Stripe)
+* Payment method not working for pro (Stripe) >>> Watch lesson 111 + 112 + 113
 * Job title not showing on profile
 * Pro vs Basic on what you see. Currently commented out to see everything
