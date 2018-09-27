@@ -24,3 +24,4 @@ User Profiles
 Problems
 * Payment method not working for pro (Stripe)
 * Job title not showing on profile
+* Pro vs Basic on what you see. Currently commented out to see everything
