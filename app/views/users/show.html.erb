@@ -1,7 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3 text-center">
-      <%= image_tag @user.profile.avatar.url, class: 'avatar-show-img' %>
+      <%= image_tag @user.profile.avatar.url, class: "avatar-show-img" %>
+        <% if @user.nil? %>
+        <% provide(:title, 'Not found') %>
+        No user with that ID has been found.
+      <% else %>
+        <!-- Contents of your current show.html.erb -->
+      <% end %>
     </div>
     
     <div class="col-md-6">
