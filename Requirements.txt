@@ -20,3 +20,7 @@ User Profiles
 * User should be able to create and view their own profile
 * User profile should have a profile picture
 * User should be able to view all user profiles
+
+Problems
+* Payment method not working for pro (Stripe)
+* Job title not showing on profile
