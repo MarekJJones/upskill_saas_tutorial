@@ -46,7 +46,7 @@ class ProfilesController < ApplicationController
   # Safety to only allow folling 
   private
     def profile_params
-      params.require(:profile).permit(:first_name, :last_name, :avatar, :phone_number, :contact_email, :description)
+      params.require(:profile).permit(:first_name, :last_name, :avatar, :job_title, :phone_number, :contact_email, :description)
     end
     
     def only_current_user
